@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-				content="width=device-width, initial-scale=1.0">
-	<meta name="description"
-				content="Easy webdev startpack by budfy">
-	<meta name="keywords"
-				content="Webdev, Gulp4, html, css, js, jquery">
-	<link rel="shortcut icon"
-				href="img/favicon.png"
-				type="image/x-icon">
-	<link rel="stylesheet"
-				href="css/libs.min.css">
-	<link rel="stylesheet"
-				href="css/style.min.css">
-	<title>Easy webdev startpack - test</title>
-</head>
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
 
 <body>
 	<main class="main --svg__bg">
@@ -209,8 +198,7 @@
 			</div>
 		</div>
 	</main>
-	<script src="js/libs.min.js"></script>
-<script src="js/main.min.js"></script>
+	@@include('components/page/_4_scripts.html')
 </body>
 
 </html>

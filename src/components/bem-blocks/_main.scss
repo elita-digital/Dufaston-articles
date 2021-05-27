@@ -1,0 +1,23 @@
+.main {
+	margin-top: 1.75rem;
+	background-size: 120% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+
+	&__article {
+		max-width: 70.25rem;
+	}
+
+	&__title-wrapper {
+		margin-left: 2.5rem;
+		max-width: 40.75rem;
+	}
+
+	&__title {
+		color: var(--color__title);
+	}
+
+	&__switcher {
+		margin-left: 1rem;
+	}
+}

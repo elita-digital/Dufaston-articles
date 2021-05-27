@@ -1,1 +1,19 @@
-:root {}
+:root {
+	--color__title: #D66D9B;
+	--color__accent-1: #EE1568;
+	--color__accent-2: #F35B96;
+	--color__white: #ffffff;
+	--color__text: #000000;
+	--color__switcher-bg: #E4E0E0;
+	--color__switcher-border: #E9E9E9;
+
+	--grad-1: linear-gradient(180deg, #CF1E61 0%, #F60A64 99.99%, #81CD8F 100%);
+	--grad-2: linear-gradient(356.16deg, #FFFFFF 77.03%, rgba(255, 255, 255, 0.71) 77.03%, #FFFFFF 77.03%, #FFFFFF 86.29%, #ED0F64 98.71%);
+	--grad-3: linear-gradient(180deg, #6AC97C 0%, #81CD8F 99.99%, #81CD8F 100%);
+	--grad-btn: linear-gradient(119.7deg, #6ECA7F -23%, #FBBA7D -22.99%, #F572A4 68.4%);
+
+	--shadow-1: 0px 2px 4px rgba(0, 0, 0, 0.25),
+		0px -2px 10px rgba(255, 255, 255, 0.25);
+	--shadow-2: 10px 0px 20px rgba(0, 0, 0, 0.1);
+	--shadow-3: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+}

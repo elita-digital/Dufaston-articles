@@ -15,7 +15,9 @@ body {
 	position: relative;
 }
 
-body {}
+body {
+	max-width: 100%;
+}
 
 ul,
 ol,
@@ -67,4 +69,10 @@ button {
 
 .--align-end {
 	align-items: flex-end;
+}
+
+.container {
+	width: 100%;
+	max-width: 120rem;
+	padding: 0 9.75rem;
 }

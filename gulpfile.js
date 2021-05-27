@@ -27,6 +27,7 @@ const ttf2woff = require('gulp-ttf2woff');
 const ttf2eot = require('gulp-ttf2eot');
 const fs = require('fs');
 const ftp = require('vinyl-ftp');
+const webp = require('gulp-webp');
 const {
 	strict
 } = require('assert');
@@ -224,8 +225,8 @@ gulp.task('svg2sprite', () => {
 });
 
 gulp.task('img', () => {
-	return gulp
-		.src('src/img/**/*.+(png|jpg|jpeg|gif|svg|ico|webp)')
+	gulp
+		.src('src/img/**/*.+(png|jpg|jpeg|gif|svg|ico)')
 		.pipe(imagemin({
 				interlaced: true,
 				progressive: true,
@@ -247,6 +248,12 @@ gulp.task('img', () => {
 				imagemin.optipng(),
 				imagemin.svgo()
 			], ), )
+		.pipe(gulp.dest('build/img'))
+		.pipe(size(settings_size))
+		.pipe(bs.stream())
+
+	return gulp.src('build/img/**/*.+(png|jpg|jpeg)')
+		.pipe(webp())
 		.pipe(gulp.dest('build/img'))
 		.pipe(size(settings_size))
 		.pipe(bs.stream())
@@ -357,6 +364,15 @@ gulp.task('server_php', () => {
 		logFileChanges: true,
 	})
 });
+
+gulp.task(
+	"makeDocs",
+	function () {
+		return gulp
+			.src("build/**/*.*")
+			.pipe(gulp.dest("docs"))
+	}
+)
 
 gulp.task('deploy', () => {
 	return gulp
