@@ -290,6 +290,31 @@
 		margin-top: 0.5rem;
 	}
 
+	&__image-row {
+		.content__text {
+			flex: 0 1 auto;
+		}
+	}
+
+	&__image-round {
+		display: block;
+		height: 13.5rem;
+		flex: 0 0 13.5rem;
+		border: 0.5rem solid var(--color__title);
+		overflow: hidden;
+		margin-right: 1.5rem;
+		border-radius: 50%;
+	}
+
+	&__image-pic {
+		border-radius: 50%;
+		object-position: center;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		border: 0.5rem solid var(--color__white);
+	}
+
 	[id] {
 		scroll-margin-top: 10vh;
 	}
