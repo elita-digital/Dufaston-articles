@@ -3,14 +3,23 @@
 	background-size: 120% auto;
 	background-repeat: no-repeat;
 	background-position: center top;
+	font-size: 16px;
+
+	@media screen and (max-width: 767px) {
+		font-size: 12px;
+	}
 
 	&__article {
 		max-width: 70.25rem;
 	}
 
 	&__title-wrapper {
-		margin-left: 2.5rem;
-		max-width: 40.75rem;
+		margin-left: 2.5em;
+		max-width: 40.75em;
+
+		@media screen and (max-width: 639px) {
+			margin-left: 0;
+		}
 	}
 
 	&__title {
@@ -18,6 +27,6 @@
 	}
 
 	&__switcher {
-		margin-left: 1rem;
+		margin-left: 1em;
 	}
 }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack - test',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+	<main class="main --svg__bg">
+
+		<div class="container">
+			<div class="main__article">
+				<div class="main__title-wrapper flex --align-center --just-space">
+					<h1 class="main__title">Дисменорея </h1>
+					<label class="main__switcher switcher">
+						<input type="checkbox" class="switcher__check" checked>
+						<span class="switcher__body">
+							<span class="switcher__move">
+								<span class="switcher__text">Не норм</span>
+								<span class="switcher__text">Норм</span>
+							</span>
+						</span>
+					</label>
+				</div>
+
+				<article class="content --peach">
+					<header class="content__header">
+						<h2 class="content__title">Дисменорея в цифрах и фактах: <br>кто в группе риска?</h2>
+						<div class="content__header-inner flex --just-space --align-center">
+							<div class="content__contents-wrapper">
+								<h3 class="content__contents-title">Оглавление</h3>
+								<ul class="content__contents-list">
+									<li class="content__contents-item">
+										<a href="#part-1" class="content__contents-link">
+											Что нужно о ней знать?
+										</a>
+									</li>
+									<li class="content__contents-item">
+										<a href="#part-2" class="content__contents-link">
+											Кто в группе риска?
+										</a>
+									</li>
+								</ul>
+							</div>
+							<picture class="content__header-pic">
+								<source srcset="img/image4.webp" type="image/webp">
+								<img src="img/image4.jpg" alt="" class="content__header-image">
+							</picture>
+						</div>
+					</header>
+
+					<div class="content__main">
+						<p class="content__lead">
+							Болезненные менструации знакомы более 50% женщин. Многие считают, что такое состояние является естественным и неизбежным. На самом деле, это патология, которая называется “дисменорея”. В качестве синонимов этого термина могут употребляться понятия «альгоменорея» и «альгодисменорея», что также означает болезненные менструации у женщин в отсутствии органических причин.
+						</p>
+						<p class="content__lead">
+							Однако, дисменорея – это состояние, которое проявляется не только болезненными месячными, но может сопровождаться и множеством разнообразных симптомов, например тошнотой, диареей, головными болями, бессонницей, потерей сознания, изменением настроения, повышенной потливостью и др. Нередко дисменорее предшествует предменструальный синдром.
+						</p>
+						<p class="content__lead">
+							Среди наиболее частых причин временной нетрудоспособности учащихся и работающих женщин дисменорея занимает первое место.
+						</p>
+						<h3 class="content__subtitle" id="part1">Что нужно о ней знать?</h3>
+						<p class="content__text">
+							По результатам различных исследований, распространенность дисменореи в России варьирует от 43 до 90%. Такой большой разброс цифр связан с тем, что в статистический анализ попадали только те случаи дисменореи, которые значительно снижали общее самочувствие и трудоспособность женщин. Печален тот факт, многие женщины до сих пор считают, что болезненные месячные — это нормально.
+						</p>
+						<p class="content__text">
+							По данным исследователей из Швеции, до 30% женщин испытывают болезненные ощущения в период менструации,
+							а 5-7% становятся нетрудоспособными как минимум на несколько часов в день.
+							В Японии насчитывается около 30 миллионов женщин репродуктивного возраста, и практически треть из них отметили, что испытывают менструальные боли, которые требуют медицинского вмешательства.
+						</p>
+						<h3 class="content__subtitle --black">ДИСМЕНОРЕЯ</h3>
+						<div class="content__accent-wrapper flex --align-center --just-space">
+							<div class="content__accent-inner flex --align-center" id="part-1">
+								<picture class="content__accent-round flex --align-center --just-center">
+									<img src="img/woman.svg" alt="" class="content__accent-pic">
+								</picture>
+								<p class="content__accent-text">
+									встречается у 60-70% женщин в возрасте 14-45 лет
+								</p>
+							</div>
+							<div class="content__accent-inner flex --align-center" id="part-1">
+								<picture class="content__accent-round flex --align-center --just-center">
+									<img src="img/uterus.svg" alt="" class="content__accent-pic">
+								</picture>
+								<p class="content__accent-text">
+									в 75% случаев совпадает с первой менструацией в жизни женщины
+								</p>
+							</div>
+						</div>
+
+						<div class="content__chart flex --align-str --just-space">
+							<div class="content__chart-col">
+								<h4 class="content__chart-title"> Нередко сопровождается:</h4>
+								<div class="content__chart-num" data-percent="84" style="--percent:84%;">рвотой</div>
+								<div class="content__chart-num" data-percent="79" style="--percent:79%;">диареей</div>
+								<div class="content__chart-num" data-percent="23" style="--percent:23%;">головокружением</div>
+								<div class="content__chart-num" data-percent="16" style="--percent:16%;">обмороками</div>
+								<div class="content__chart-num" data-percent="13.5" style="--percent:13.5%;">головной болью</div>
+							</div>
+							<div class="content__chart-col">
+								<h4 class="content__chart-title">В зависимости от степени выраженности болезненных менструаций:</h4>
+								<div class="content__chart-row flex --align-center --just-space">
+									<img class="content__chart-pic" src="img/smile_pos.svg" alt="">
+									<span class="content__chart-text">20% женщин отмечают легкую степень дисменореи</span>
+								</div>
+								<div class="content__chart-row flex --align-center --just-space">
+									<img class="content__chart-pic" src="img/smile_neitral.svg" alt="">
+									<span class="content__chart-text">у 35% наблюдаются симптомы средней тяжести</span>
+								</div>
+								<div class="content__chart-row flex --align-center --just-space">
+									<img class="content__chart-pic" src="img/smile_negat.svg" alt="">
+									<span class="content__chart-text">45% страдают тяжелыми проявлениями дисменореи</span>
+								</div>
+							</div>
+						</div>
+
+						<p class="content__text">
+							Отсутствие первичной дисменореи не означает, что с ней невозможно столкнуться в дальнейшем. Дебют дисменореи, как правило, совпадает с менархе (первой менструацией в жизни женщины) и у каждой четвертой пациентки симптомы дисменореи возникают спустя 1-3 года после начала менструации, когда циклы становятся регулярными.
+						</p>
+						<p class="content__text">
+							Существуют факторы, провоцирующие развитие патологии. <strong>Кто в группе риска?</strong>
+						</p>
+						<p class="content__text">
+							Ученым удалось выявить четкую взаимосвязь между событиями, которые достоверно повышают предрасположенность к дисменорее:
+						</p>
+						<ul class="content__list">
+							<li class="content__list-item">белая раса</li>
+							<li class="content__list-item">индекс массы тела менее 20</li>
+							<li class="content__list-item">курение, в т.ч. пассивное</li>
+							<li class="content__list-item">раннее начало менструаций</li>
+							<li class="content__list-item">обильные и продолжительные менструации</li>
+							<li class="content__list-item">полиморфизм гена CYP2D6</li>
+							<li class="content__list-item">психологические травмы и насилие в детстве</li>
+							<li class="content__list-item">эмоциональная лабильность</li>
+							<li class="content__list-item">частые переутомления</li>
+							<li class="content__list-item">наличие дисменореи у мамы и/или ближайших родственниц</li>
+							<li class="content__list-item">благополучный материальный статус</li>
+							<li class="content__list-item">профессиональный спорт или тяжелый физический труд</li>
+						</ul>
+						<p class="content__text">
+							Первичная дисменорея представляет собой циклический патологический процесс, ведущим симптомом которого является тазовая боль. Ежемесячное ожидание боли отражается на общем самочувствии, эмоциональной и психической деятельности молодых женщин. Сильная боль истощает нервную систему, способствует развитию депрессивного состояния, снижает память, концентрацию и работоспособность, нарушает эмоционально-психическую сферу.
+							К сожалению, многие женщины до сих пор недостаточно информированы о данном заболевании и занимаются самолечением, полагая факт наличия болезненных менструаций недостаточным поводом для обращения к специалисту.
+						</p>
+
+					</div>
+					<footer class="content__sub">
+						<p class="content__sub-index">RUS2182001 (v1.0)</p>
+						<ol class="content__source-list">
+							<li class="content__source-item">Latthe, P. M. Dysmenorrhoea / P. M. Latthe, R. Champaneria, K. S. Khan // Clin. Evid. (Online). - 2014. - № 21. - P. 2011-2014. </li>
+							<li class="content__source-item">Гинекология. Национальное руководство / Под ред. Г.М. Савельевой, Г.Т. Сухих, В.Н. Серова, И.Б. Манухина, В.Е. Радзинского. — 2-е изд. — М.: ГЭОТАР-Медиа, 2017. — 1048 с. </li>
+							<li class="content__source-item">ДеЧерни А.Х. Акушерство и гинекология: Учебное пособие : В 2 т. / Алан Х. ДеЧерни, Лорен Натан ; Пер. с англ. ; Под общ. ред. акад. РАМН А.Н.Стрижакова. – М. : МЕДпресс-информ, 2008. </li>
+						</ol>
+					</footer>
+					<aside class="content__questions --top">
+						<ul class="content__questions-list">
+							<li class="content__questions-item">чек-лист: <br> здоровое течение цикла</li>
+							<li class="content__questions-item">Профилактика
+								дисменореи
+							</li>
+						</ul>
+					</aside>
+				</article>
+			</div>
+		</div>
+	</main>
+	@@include('components/page/_4_scripts.html')
+</body>
+
+</html>
