@@ -159,6 +159,9 @@
 			font-weight: 700;
 		}
 
+		&.--upper {
+			text-transform: uppercase;
+		}
 	}
 
 	&__table {
@@ -653,6 +656,13 @@
 		@media screen and (max-width: 767px) {
 			flex: 1 1 50%;
 		}
+
+		&.--bg {
+			background: var(--grad-accent);
+			font-weight: 700;
+			color: var(--color__white);
+			padding-right: 3em;
+		}
 	}
 
 	&__micro-title {}
@@ -674,6 +684,95 @@
 		width: 100%;
 		object-fit: cover;
 		object-position: center center;
+	}
+
+	&__list.--hyphen {
+		padding-left: 0;
+
+		& .content__list-item {
+			list-style-type: "- ";
+			list-style-position: inside;
+			font-weight: 700;
+		}
+	}
+
+	&__list,
+	&__list-number {
+		&.--colored {
+			color: var(--color__accent-1);
+
+			.content__list-item {
+				color: var(--color__accent-1);
+
+				&::marker {
+					color: var(--color__accent-1);
+				}
+			}
+		}
+	}
+
+	&__list,
+	&__list-number {
+		.--white {
+			color: var(--color__white);
+
+			.content__list-item {
+				color: var(--color__white);
+
+				&::marker {
+					color: var(--color__white);
+				}
+			}
+		}
+	}
+
+	&__special-wrapper {
+		@media screen and (max-width: 639px) {
+			flex-direction: column;
+
+			.content__list,
+			.content__micro {
+				width: 100%;
+				flex: 0 0 auto;
+				margin: 1em 0;
+			}
+		}
+	}
+
+	&__special-block {
+		background: var(--grad-accent);
+		color: var(--color__white);
+		padding: 0.75em 3em;
+		border-radius: 0.75em;
+
+		.content__list {
+			margin-top: 0.5em;
+			column-count: 2;
+			column-gap: 1.5em;
+
+			@media screen and (max-width: 639px) {
+				column-count: 1;
+			}
+		}
+	}
+
+	&__special-subtitle {
+		font-size: 1em;
+		font-weight: 800;
+		text-transform: uppercase;
+		color: var(--color__white);
+		text-align: center;
+	}
+
+	&__list-number.--colored {
+		font-weight: 700;
+		list-style-position: inside;
+		padding-left: 0;
+
+		.content__text {
+			font-weight: 400;
+			color: var(--color__text);
+		}
 	}
 
 	[id] {
@@ -720,5 +819,6 @@
 
 		--color__accent-1: var(--color__marina);
 		--color__accent-2: var(--color__marina);
+		--grad-accent: var(--grad-marina-accent);
 	}
 }
