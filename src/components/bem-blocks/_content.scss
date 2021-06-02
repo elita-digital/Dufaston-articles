@@ -821,4 +821,65 @@
 		--color__accent-2: var(--color__marina);
 		--grad-accent: var(--grad-marina-accent);
 	}
+
+	&.--blue {
+		background: var(--grad-blue);
+
+		.content__title {
+			color: var(--color__lilac-dark);
+		}
+
+		strong {
+			color: var(--color__blue);
+		}
+
+		--color__accent-1: var(--color__blue);
+		--color__accent-2: var(--color__blue);
+		--grad-accent: var(--grad-blue-accent);
+	}
+
+	&.--green {
+		background: var(--grad-green);
+
+		.content__title {
+			color: var(--color__lilac-dark);
+		}
+
+		strong {
+			color: var(--color__green);
+		}
+
+		--color__accent-1: var(--color__green);
+		--color__accent-2: var(--color__green);
+	}
+
+	&.--orange {
+		background: var(--grad-orange);
+
+		.content__title {
+			color: var(--color__lilac-dark);
+		}
+
+		strong {
+			color: var(--color__orange);
+		}
+
+		--color__accent-1: var(--color__orange);
+		--color__accent-2: var(--color__orange);
+	}
+
+	&.--purple {
+		background: var(--grad-purple);
+
+		.content__title {
+			color: var(--color__lilac-dark);
+		}
+
+		strong {
+			color: var(--color__purple);
+		}
+
+		--color__accent-1: var(--color__purple);
+		--color__accent-2: var(--color__purple);
+	}
 }

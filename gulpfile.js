@@ -60,7 +60,7 @@ let settings_size = {
 		log: ''
 	});
 
-gulp.task('libs_styles', () => {
+gulp.task('libs_styles', (done) => {
 	if (css_plugins.length > 0) {
 		return gulp
 			.src(css_plugins)
@@ -73,7 +73,7 @@ gulp.task('libs_styles', () => {
 			.pipe(size(settings_size))
 			.pipe(gulp.dest('build/css/'))
 	} else {
-		return true;
+		return done();
 	}
 });
 
@@ -114,7 +114,7 @@ gulp.task('style',
 	)
 );
 
-gulp.task('libs_js', () => {
+gulp.task('libs_js', (done) => {
 	if (js_plugins.length) {
 		return gulp
 			.src(js_plugins)
@@ -125,7 +125,7 @@ gulp.task('libs_js', () => {
 			.pipe(size(settings_size))
 			.pipe(gulp.dest('build/js/'))
 	} else {
-		return true
+		return done()
 	}
 });
 
@@ -382,15 +382,15 @@ gulp.task('deploy', () => {
 });
 
 gulp.task('watch_html', () => {
-	gulp.watch('src/**/*.scss', gulp.series('dev_styles','makeDocs'));
-	gulp.watch('src/**/*.html', gulp.series('html','makeDocs'));
-	gulp.watch('src/**/*.js', gulp.series('dev_js','makeDocs'));
-	gulp.watch('src/**/*.json', gulp.series('json', 'html','makeDocs'));
-	gulp.watch('src/img/**/*.*', gulp.series('img','makeDocs'));
-	gulp.watch('src/svg/css/**/*.svg', gulp.series('svg2css','makeDocs'));
-	gulp.watch('src/svg/sprite/**/*.svg', gulp.series('svg2sprite','makeDocs'));
-	gulp.watch('src/svg/include/**/*.svg', gulp.series('html','makeDocs'));
-	gulp.watch('src/fonts/**/*.ttf', gulp.series('fonts','makeDocs'));
+	gulp.watch('src/**/*.scss', gulp.series('dev_styles', 'makeDocs'));
+	gulp.watch('src/**/*.html', gulp.series('html', 'makeDocs'));
+	gulp.watch('src/**/*.js', gulp.series('dev_js', 'makeDocs'));
+	gulp.watch('src/**/*.json', gulp.series('json', 'html', 'makeDocs'));
+	gulp.watch('src/img/**/*.*', gulp.series('img', 'makeDocs'));
+	gulp.watch('src/svg/css/**/*.svg', gulp.series('svg2css', 'makeDocs'));
+	gulp.watch('src/svg/sprite/**/*.svg', gulp.series('svg2sprite', 'makeDocs'));
+	gulp.watch('src/svg/include/**/*.svg', gulp.series('html', 'makeDocs'));
+	gulp.watch('src/fonts/**/*.ttf', gulp.series('fonts', 'makeDocs'));
 });
 
 gulp.task('watch_php', () => {
