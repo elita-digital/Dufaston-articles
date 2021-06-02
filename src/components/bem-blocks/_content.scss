@@ -705,6 +705,20 @@
 
 		--color__accent-1: var(--color__lilac);
 		--color__accent-2: var(--color__lilac);
+	}
 
+	&.--marina {
+		background: var(--grad-marina);
+
+		.content__title {
+			color: var(--color__lilac-dark);
+		}
+
+		strong {
+			color: var(--color__marina);
+		}
+
+		--color__accent-1: var(--color__marina);
+		--color__accent-2: var(--color__marina);
 	}
 }
