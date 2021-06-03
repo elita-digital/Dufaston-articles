@@ -1,3 +1,44 @@
+a[href^="article"] {
+	color: var(--color__accent-1);
+	transition: all 0.24s;
+	display: inline-block;
+	margin: 1rem 2rem;
+
+	&:hover {
+		color: var(--color__title);
+	}
+
+	s {
+		color: var(--color__text);
+	}
+}
+
+a[href^="article-psycho"],
+a[href^="article-endocrinology"],
+a[href^="article-gynaecology"] {
+	color: var(--color__lilac);
+}
+
+a[href^="article-global"] {
+	color: var(--color__marina);
+}
+
+a[href^="article-sexology"] {
+	color: var(--color__blue);
+}
+
+a[href^="article-cosmetology"] {
+	color: var(--color__green);
+}
+
+a[href^="article-dietology"] {
+	color: var(--color__orange);
+}
+
+a[href^="article-nmc"] {
+	color: var(--color__purple);
+}
+
 .content {
 	background: var(--grad-2);
 	border-radius: 3.5em;
@@ -772,6 +813,51 @@
 		.content__text {
 			font-weight: 400;
 			color: var(--color__text);
+		}
+	}
+
+	&__quote {
+		margin: 1em 0;
+		padding-left: 6em;
+		position: relative;
+		font-size: 1.25em;
+
+		&::before {
+			content: '“';
+			position: absolute;
+			font-size: 12.5em;
+			font-style: italic;
+			top: -0.1em;
+			left: -0.25ch;
+			line-height: 1;
+			pointer-events: none;
+			color: var(--color__accent-1);
+		}
+
+		@media screen and (max-width: 639px) {
+			padding-left: 2.5em;
+
+			&::before {
+				font-size: 6em;
+			}
+		}
+	}
+
+	&__quote-author {}
+
+	&__author-name {
+		font-weight: 700;
+	}
+
+	&__author-position {
+		font-size: 1em;
+	}
+
+	&__quote-text {
+		font-style: italic;
+
+		&::before {
+			content: '- ';
 		}
 	}
 
