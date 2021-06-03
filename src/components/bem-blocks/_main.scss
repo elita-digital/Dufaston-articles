@@ -1,32 +1,32 @@
 .main {
-	margin-top: 1.75rem;
-	background-size: 120% auto;
-	background-repeat: no-repeat;
-	background-position: center top;
-	font-size: 16px;
+  margin-top: 1.75rem;
+  background-size: 120% auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  font-size: 16px;
 
-	@media screen and (max-width: 767px) {
-		font-size: 12px;
-	}
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
 
-	&__article {
-		max-width: 70.25rem;
-	}
+  &__article {
+    max-width: 70.25rem;
+  }
 
-	&__title-wrapper {
-		margin-left: 2.5em;
-		max-width: 40.75em;
+  &__title-wrapper {
+    margin-left: 2.5em;
+    max-width: 40.75em;
 
-		@media screen and (max-width: 639px) {
-			margin-left: 0;
-		}
-	}
+    @media screen and (max-width: 639px) {
+      margin-left: 0;
+    }
+  }
 
-	&__title {
-		color: var(--color__title);
-	}
+  &__title {
+    color: var(--color__title);
+  }
 
-	&__switcher {
-		margin-left: 1em;
-	}
+  &__switcher {
+    margin-left: 1em;
+  }
 }
